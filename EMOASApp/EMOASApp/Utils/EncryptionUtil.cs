@@ -1,16 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 
 namespace EMOASApp.Utils
 {
@@ -43,7 +34,7 @@ namespace EMOASApp.Utils
             catch (Exception ex)
             {
                 Console.Write("error[{0}]: {1}", src_str, ex.Message);
-                return "0";
+                return null;
             }
         }
         

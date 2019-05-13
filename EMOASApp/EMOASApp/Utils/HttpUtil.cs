@@ -18,7 +18,7 @@ namespace EMOASApp.Utils
             {
                 try
                 {
-                    HttpResponseMessage response = await client.GetAsync("url");
+                    HttpResponseMessage response = await client.GetAsync(url);
                     response.EnsureSuccessStatusCode();
                     string responseBody = await response.Content.ReadAsStringAsync();
                     // string responseBody = await client.GetStringAsync(uri);

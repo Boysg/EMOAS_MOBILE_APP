@@ -23,6 +23,8 @@
     <Jar>obj\Debug\81\lp\14\jl\bin\classes.jar</Jar>
     <Jar>obj\Debug\81\lp\15\jl\bin\classes.jar</Jar>
     <Jar>obj\Debug\81\lp\16\jl\bin\classes.jar</Jar>
+    <Jar>obj\Debug\81\lp\18\jl\jcore-android-2.0.0.jar</Jar>
+    <Jar>obj\Debug\81\lp\18\jl\jpush-android-3.2.0.jar</Jar>
     <Jar>obj\Debug\81\lp\2\jl\arch-core-common.jar</Jar>
     <Jar>obj\Debug\81\lp\3\jl\arch-lifecycle-common.jar</Jar>
     <Jar>obj\Debug\81\lp\4\jl\bin\classes.jar</Jar>
