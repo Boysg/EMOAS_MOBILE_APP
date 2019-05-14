@@ -1,3 +1,4 @@
+JPush.Xamarin.Android.SDK
 Newtonsoft.Json
 System.Runtime
 Xamarin.Android.Arch.Core.Common
@@ -16,4 +17,3 @@ Xamarin.Android.Support.v7.AppCompat
 Xamarin.Android.Support.v7.RecyclerView
 Xamarin.Android.Support.Vector.Drawable
 netstandard
-JPush.Xamarin.Android.SDK

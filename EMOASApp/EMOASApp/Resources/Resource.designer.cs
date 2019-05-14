@@ -3023,10 +3023,10 @@ namespace EMOASApp
 			public const int abc_select_dialog_material = 2130968601;
 			
 			// aapt resource value: 0x7f04001a
-			public const int activity_login = 2130968602;
+			public const int activity_home = 2130968602;
 			
 			// aapt resource value: 0x7f04001b
-			public const int activity_main = 2130968603;
+			public const int activity_login = 2130968603;
 			
 			// aapt resource value: 0x7f04001c
 			public const int design_bottom_navigation_item = 2130968604;

@@ -10,7 +10,6 @@ E:\EMOAS_MOBILE_APP\EMOASApp\EMOASApp\obj\Debug\81\EMOASApp.csproj.CoreCompileIn
 E:\EMOAS_MOBILE_APP\EMOASApp\EMOASApp\obj\Debug\81\EMOASApp.dll
 E:\EMOAS_MOBILE_APP\EMOASApp\EMOASApp\obj\Debug\81\EMOASApp.pdb
 E:\EMOAS_MOBILE_APP\EMOASApp\EMOASApp\obj\Debug\81\android\bin\EMOASApp.EMOASApp.apk
-E:\EMOAS_MOBILE_APP\EMOASApp\EMOASApp\obj\Debug\81\res\layout\activity_main.xml
 E:\EMOAS_MOBILE_APP\EMOASApp\EMOASApp\obj\Debug\81\res\values\colors.xml
 E:\EMOAS_MOBILE_APP\EMOASApp\EMOASApp\obj\Debug\81\res\values\ic_launcher_background.xml
 E:\EMOAS_MOBILE_APP\EMOASApp\EMOASApp\obj\Debug\81\res\values\strings.xml
@@ -94,3 +93,8 @@ E:\EMOAS_MOBILE_APP\EMOASApp\EMOASApp\obj\Debug\81\android\assets\System.Transac
 E:\EMOAS_MOBILE_APP\EMOASApp\EMOASApp\obj\Debug\81\android\assets\System.Web.Services.pdb
 E:\EMOAS_MOBILE_APP\EMOASApp\EMOASApp\obj\Debug\81\android\assets\System.Xml.Linq.pdb
 E:\EMOAS_MOBILE_APP\EMOASApp\EMOASApp\obj\Debug\81\android\assets\System.Xml.pdb
+E:\EMOAS_MOBILE_APP\EMOASApp\EMOASApp\bin\Debug\JPush.Xamarin.Android.SDK.dll
+E:\EMOAS_MOBILE_APP\EMOASApp\EMOASApp\bin\Debug\JPush.Xamarin.Android.SDK.pdb
+E:\EMOAS_MOBILE_APP\EMOASApp\EMOASApp\obj\Debug\81\EMOASApp.csproj.CopyComplete
+E:\EMOAS_MOBILE_APP\EMOASApp\EMOASApp\obj\Debug\81\res\layout\activity_home.xml
+E:\EMOAS_MOBILE_APP\EMOASApp\EMOASApp\obj\Debug\81\linksrc\JPush.Xamarin.Android.SDK.pdb

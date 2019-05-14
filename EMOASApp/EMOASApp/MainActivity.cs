@@ -21,6 +21,8 @@ namespace EMOASApp
         {
             //获取
             ISharedPreferences preferences_login = GetSharedPreferences("login_inf", 0);
+            //ToDo https://www.cnblogs.com/fly-allblue/p/3792232.html
+            //
             base.OnCreate(savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_login);
@@ -54,9 +56,15 @@ namespace EMOASApp
                         Toast.MakeText(this, "用户名或密码错误", ToastLength.Short).Show();
                         return;
                     }
-                    //user接收
+                    //user接收并保存至全局对象
                     user = JsonConvert.DeserializeObject<User>(response.Result);
-
+                    Global global = Application as Global;
+                    global.User = user;
+                    //启用Jpush
+                    
+                    //跳转首页到Activity
+                    Intent intent_home = new Intent(this, typeof(HomeActivity));
+                    StartActivity(intent_home);
                 }
             };
         }
@@ -66,4 +74,5 @@ namespace EMOASApp
             base.OnPause();
         }
     }
+
 }

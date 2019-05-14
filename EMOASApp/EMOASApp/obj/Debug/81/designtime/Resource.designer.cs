@@ -2396,8 +2396,8 @@ namespace EMOASApp
 			// aapt resource value: 0x7F0C001A
 			public const int bottom = 2131492890;
 			
-			// aapt resource value: 0x7F020010
-			public const int btn_login = 2130837520;
+			// aapt resource value: 0x7F030010
+			public const int btn_login = 2130903056;
 			
 			// aapt resource value: 0x7F0C001B
 			public const int buttonPanel = 2131492891;
@@ -2450,14 +2450,14 @@ namespace EMOASApp
 			// aapt resource value: 0x7F0C002B
 			public const int design_navigation_view = 2131492907;
 			
-			// aapt resource value: 0x7F020008
-			public const int edit_password = 2130837512;
+			// aapt resource value: 0x7F030008
+			public const int edit_password = 2130903048;
 			
 			// aapt resource value: 0x7F0C002C
 			public const int edit_query = 2131492908;
 			
-			// aapt resource value: 0x7F020005
-			public const int edit_user_name = 2130837509;
+			// aapt resource value: 0x7F030005
+			public const int edit_user_name = 2130903045;
 			
 			// aapt resource value: 0x7F0C002D
 			public const int end = 2131492909;
@@ -2495,14 +2495,14 @@ namespace EMOASApp
 			// aapt resource value: 0x7F0C0038
 			public const int image = 2131492920;
 			
-			// aapt resource value: 0x7F020009
-			public const int imageView3 = 2130837513;
+			// aapt resource value: 0x7F030009
+			public const int imageView3 = 2130903049;
 			
-			// aapt resource value: 0x7F020002
-			public const int image_login_top = 2130837506;
+			// aapt resource value: 0x7F030002
+			public const int image_login_top = 2130903042;
 			
-			// aapt resource value: 0x7F020006
-			public const int image_user = 2130837510;
+			// aapt resource value: 0x7F030006
+			public const int image_user = 2130903046;
 			
 			// aapt resource value: 0x7F0C000C
 			public const int info = 2131492876;
@@ -2516,14 +2516,14 @@ namespace EMOASApp
 			// aapt resource value: 0x7F0C003C
 			public const int largeLabel = 2131492924;
 			
-			// aapt resource value: 0x7F020003
-			public const int layout_login = 2130837507;
+			// aapt resource value: 0x7F030003
+			public const int layout_login = 2130903043;
 			
-			// aapt resource value: 0x7F020007
-			public const int layout_password = 2130837511;
+			// aapt resource value: 0x7F030007
+			public const int layout_password = 2130903047;
 			
-			// aapt resource value: 0x7F020004
-			public const int layout_user = 2130837508;
+			// aapt resource value: 0x7F030004
+			public const int layout_user = 2130903044;
 			
 			// aapt resource value: 0x7F0C003D
 			public const int left = 2131492925;
@@ -2911,11 +2911,11 @@ namespace EMOASApp
 			// aapt resource value: 0x7F0F001A
 			public const int abc_select_dialog_material = 2131689498;
 			
-			// aapt resource value: 0x7F030002
-			public const int activity_login = 2130903042;
+			// aapt resource value: 0x7F020002
+			public const int activity_home = 2130837506;
 			
-			// aapt resource value: 0x7F030003
-			public const int activity_main = 2130903043;
+			// aapt resource value: 0x7F020003
+			public const int activity_login = 2130837507;
 			
 			// aapt resource value: 0x7F0F001B
 			public const int design_bottom_navigation_item = 2131689499;
