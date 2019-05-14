@@ -1301,14 +1301,14 @@ namespace EMOASApp
 			// aapt resource value: 0x7F060026
 			public const int button_material_light = 2131099686;
 			
-			// aapt resource value: 0x7F050004
-			public const int colorAccent = 2131034116;
+			// aapt resource value: 0x7F010005
+			public const int colorAccent = 2130771973;
 			
-			// aapt resource value: 0x7F050002
-			public const int colorPrimary = 2131034114;
+			// aapt resource value: 0x7F010003
+			public const int colorPrimary = 2130771971;
 			
-			// aapt resource value: 0x7F050003
-			public const int colorPrimaryDark = 2131034115;
+			// aapt resource value: 0x7F010004
+			public const int colorPrimaryDark = 2130771972;
 			
 			// aapt resource value: 0x7F060027
 			public const int design_bottom_navigation_shadow_color = 2131099687;
@@ -1370,8 +1370,8 @@ namespace EMOASApp
 			// aapt resource value: 0x7F06003A
 			public const int highlighted_text_material_light = 2131099706;
 			
-			// aapt resource value: 0x7F050005
-			public const int ic_launcher_background = 2131034117;
+			// aapt resource value: 0x7F010006
+			public const int ic_launcher_background = 2130771974;
 			
 			// aapt resource value: 0x7F06003B
 			public const int material_blue_grey_800 = 2131099707;
@@ -1477,6 +1477,9 @@ namespace EMOASApp
 			
 			// aapt resource value: 0x7F06005D
 			public const int switch_thumb_normal_material_light = 2131099741;
+			
+			// aapt resource value: 0x7F010002
+			public const int tab_text_color_selector = 2130771970;
 			
 			// aapt resource value: 0x7F06005E
 			public const int tooltip_background_dark = 2131099742;
@@ -2248,11 +2251,14 @@ namespace EMOASApp
 			// aapt resource value: 0x7F09005B
 			public const int design_snackbar_background = 2131296347;
 			
-			// aapt resource value: 0x7F010002
-			public const int ico_password = 2130771970;
+			// aapt resource value: 0x7F020002
+			public const int ico_password = 2130837506;
 			
-			// aapt resource value: 0x7F010003
-			public const int ico_user = 2130771971;
+			// aapt resource value: 0x7F020003
+			public const int ico_user = 2130837507;
+			
+			// aapt resource value: 0x7F020004
+			public const int ic_launcher = 2130837508;
 			
 			// aapt resource value: 0x7F09005C
 			public const int navigation_empty_icon = 2131296348;
@@ -2293,11 +2299,23 @@ namespace EMOASApp
 			// aapt resource value: 0x7F09000C
 			public const int notify_panel_notification_icon_bg = 2131296268;
 			
-			// aapt resource value: 0x7F010004
-			public const int pic_login_background = 2130771972;
+			// aapt resource value: 0x7F020005
+			public const int pic_login_background = 2130837509;
 			
-			// aapt resource value: 0x7F010005
-			public const int pic_login_top = 2130771973;
+			// aapt resource value: 0x7F020006
+			public const int pic_login_top = 2130837510;
+			
+			// aapt resource value: 0x7F020007
+			public const int tab_contact_selector = 2130837511;
+			
+			// aapt resource value: 0x7F020008
+			public const int tab_record_selector = 2130837512;
+			
+			// aapt resource value: 0x7F020009
+			public const int tab_setting_selector = 2130837513;
+			
+			// aapt resource value: 0x7F020010
+			public const int tab_sign_selector = 2130837520;
 			
 			// aapt resource value: 0x7F090069
 			public const int tooltip_frame_dark = 2131296361;
@@ -2396,8 +2414,8 @@ namespace EMOASApp
 			// aapt resource value: 0x7F0C001A
 			public const int bottom = 2131492890;
 			
-			// aapt resource value: 0x7F030010
-			public const int btn_login = 2130903056;
+			// aapt resource value: 0x7F030016
+			public const int btn_login = 2130903062;
 			
 			// aapt resource value: 0x7F0C001B
 			public const int buttonPanel = 2131492891;
@@ -2413,6 +2431,9 @@ namespace EMOASApp
 			
 			// aapt resource value: 0x7F0C0008
 			public const int chronometer = 2131492872;
+			
+			// aapt resource value: 0x7F030006
+			public const int contact_tab = 2130903046;
 			
 			// aapt resource value: 0x7F0C0020
 			public const int container = 2131492896;
@@ -2450,14 +2471,14 @@ namespace EMOASApp
 			// aapt resource value: 0x7F0C002B
 			public const int design_navigation_view = 2131492907;
 			
-			// aapt resource value: 0x7F030008
-			public const int edit_password = 2130903048;
+			// aapt resource value: 0x7F030014
+			public const int edit_password = 2130903060;
 			
 			// aapt resource value: 0x7F0C002C
 			public const int edit_query = 2131492908;
 			
-			// aapt resource value: 0x7F030005
-			public const int edit_user_name = 2130903045;
+			// aapt resource value: 0x7F030011
+			public const int edit_user_name = 2130903057;
 			
 			// aapt resource value: 0x7F0C002D
 			public const int end = 2131492909;
@@ -2480,6 +2501,9 @@ namespace EMOASApp
 			// aapt resource value: 0x7F0C0009
 			public const int forever = 2131492873;
 			
+			// aapt resource value: 0x7F030002
+			public const int fragment_vp = 2130903042;
+			
 			// aapt resource value: 0x7F0C0034
 			public const int ghost_view = 2131492916;
 			
@@ -2495,14 +2519,14 @@ namespace EMOASApp
 			// aapt resource value: 0x7F0C0038
 			public const int image = 2131492920;
 			
-			// aapt resource value: 0x7F030009
-			public const int imageView3 = 2130903049;
+			// aapt resource value: 0x7F030015
+			public const int imageView3 = 2130903061;
 			
-			// aapt resource value: 0x7F030002
-			public const int image_login_top = 2130903042;
+			// aapt resource value: 0x7F030008
+			public const int image_login_top = 2130903048;
 			
-			// aapt resource value: 0x7F030006
-			public const int image_user = 2130903046;
+			// aapt resource value: 0x7F030012
+			public const int image_user = 2130903058;
 			
 			// aapt resource value: 0x7F0C000C
 			public const int info = 2131492876;
@@ -2516,14 +2540,14 @@ namespace EMOASApp
 			// aapt resource value: 0x7F0C003C
 			public const int largeLabel = 2131492924;
 			
-			// aapt resource value: 0x7F030003
-			public const int layout_login = 2130903043;
+			// aapt resource value: 0x7F030009
+			public const int layout_login = 2130903049;
 			
-			// aapt resource value: 0x7F030007
-			public const int layout_password = 2130903047;
+			// aapt resource value: 0x7F030013
+			public const int layout_password = 2130903059;
 			
-			// aapt resource value: 0x7F030004
-			public const int layout_user = 2130903044;
+			// aapt resource value: 0x7F030010
+			public const int layout_user = 2130903056;
 			
 			// aapt resource value: 0x7F0C003D
 			public const int left = 2131492925;
@@ -2594,6 +2618,9 @@ namespace EMOASApp
 			// aapt resource value: 0x7F0C0053
 			public const int radio = 2131492947;
 			
+			// aapt resource value: 0x7F030005
+			public const int record_tab = 2130903045;
+			
 			// aapt resource value: 0x7F0C0054
 			public const int right = 2131492948;
 			
@@ -2660,6 +2687,9 @@ namespace EMOASApp
 			// aapt resource value: 0x7F0C0069
 			public const int select_dialog_listview = 2131492969;
 			
+			// aapt resource value: 0x7F030007
+			public const int settings_tab = 2130903047;
+			
 			// aapt resource value: 0x7F0C006A
 			public const int shortcut = 2131492970;
 			
@@ -2702,6 +2732,9 @@ namespace EMOASApp
 			// aapt resource value: 0x7F0C0077
 			public const int tabMode = 2131492983;
 			
+			// aapt resource value: 0x7F030003
+			public const int tabs_rg = 2130903043;
+			
 			// aapt resource value: 0x7F0C0016
 			public const int tag_transition_group = 2131492886;
 			
@@ -2737,6 +2770,9 @@ namespace EMOASApp
 			
 			// aapt resource value: 0x7F0C0083
 			public const int title_template = 2131492995;
+			
+			// aapt resource value: 0x7F030004
+			public const int today_tab = 2130903044;
 			
 			// aapt resource value: 0x7F0C0084
 			public const int top = 2131492996;
@@ -2911,11 +2947,11 @@ namespace EMOASApp
 			// aapt resource value: 0x7F0F001A
 			public const int abc_select_dialog_material = 2131689498;
 			
-			// aapt resource value: 0x7F020002
-			public const int activity_home = 2130837506;
+			// aapt resource value: 0x7F040002
+			public const int activity_home = 2130968578;
 			
-			// aapt resource value: 0x7F020003
-			public const int activity_login = 2130837507;
+			// aapt resource value: 0x7F040003
+			public const int activity_login = 2130968579;
 			
 			// aapt resource value: 0x7F0F001B
 			public const int design_bottom_navigation_item = 2131689499;
@@ -3032,14 +3068,41 @@ namespace EMOASApp
 		public partial class Mipmap
 		{
 			
-			// aapt resource value: 0x7F040002
-			public const int ic_launcher = 2130968578;
+			// aapt resource value: 0x7F050002
+			public const int ic_launcher = 2131034114;
 			
-			// aapt resource value: 0x7F040004
-			public const int ic_launcher_foreground = 2130968580;
+			// aapt resource value: 0x7F050004
+			public const int ic_launcher_foreground = 2131034116;
 			
-			// aapt resource value: 0x7F040003
-			public const int ic_launcher_round = 2130968579;
+			// aapt resource value: 0x7F050003
+			public const int ic_launcher_round = 2131034115;
+			
+			// aapt resource value: 0x7F050005
+			public const int sign = 2131034117;
+			
+			// aapt resource value: 0x7F050006
+			public const int tabbar_contact_default = 2131034118;
+			
+			// aapt resource value: 0x7F050007
+			public const int tabbar_contact_pressed = 2131034119;
+			
+			// aapt resource value: 0x7F050008
+			public const int tabbar_record_default = 2131034120;
+			
+			// aapt resource value: 0x7F050009
+			public const int tabbar_record_pressed = 2131034121;
+			
+			// aapt resource value: 0x7F050010
+			public const int tabbar_settings_default = 2131034128;
+			
+			// aapt resource value: 0x7F050011
+			public const int tabbar_settings_pressed = 2131034129;
+			
+			// aapt resource value: 0x7F050012
+			public const int tabbar_sign_default = 2131034130;
+			
+			// aapt resource value: 0x7F050013
+			public const int tabbar_sign_pressed = 2131034131;
 			
 			static Mipmap()
 			{
@@ -3708,6 +3771,15 @@ namespace EMOASApp
 			
 			// aapt resource value: 0x7F1600A9
 			public const int Base_Widget_Design_TabLayout = 2132148393;
+			
+			// aapt resource value: 0x7F070003
+			public const int Custom = 2131165187;
+			
+			// aapt resource value: 0x7F070004
+			public const int Custom_TabRadioButton = 2131165188;
+			
+			// aapt resource value: 0x7F070005
+			public const int MyDialogStyle = 2131165189;
 			
 			// aapt resource value: 0x7F1600AA
 			public const int Platform_AppCompat = 2132148394;

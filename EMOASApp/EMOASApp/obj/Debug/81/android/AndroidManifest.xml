@@ -5,6 +5,16 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <permission android:name="EMOASApp.EMOASApp.permission.JPUSH_MESSAGE" android:protectionLevel="signature" />
   <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme" android:name="android.app.Application" android:debuggable="true">
+    <activity android:label="HomeActivity" android:name="md515a1aace5b5a71a8988f27fe49597439.HomeActivity" />
+    <activity android:label="@string/app_name" android:theme="@style/AppTheme" android:name="md515a1aace5b5a71a8988f27fe49597439.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <receiver android:name="md515a1aace5b5a71a8988f27fe49597439.MessageReceiver" />
+    <receiver android:name="md515a1aace5b5a71a8988f27fe49597439.Receiver_test" />
+    <receiver android:name="md55370c373c346fd9a51cb9c24a6fbe012.MyReceiver" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="EMOASApp.EMOASApp.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">
@@ -77,7 +87,7 @@
     <service android:name="cn.jpush.android.service.DownloadService" android:enabled="true" android:exported="false"></service>
     <!-- Since JCore2.0.0 Required SDK核心功能-->
     <!-- 这个Service要继承JCommonService即可，可以在更多手机平台上使得推送通道保持的更稳定 -->
-    <service android:name="xx.xx.XService" android:process=":pushcore">
+    <service android:name="EMOASApp.CommonService" android:process=":pushcore">
       <intent-filter>
         <action android:name="cn.jiguang.user.service.action" />
       </intent-filter>
@@ -87,7 +97,7 @@
     <!-- Required since 3.0.7 -->
     <!-- 新的 tag/alias 接口结果返回需要开发者配置一个自定的广播 -->
     <!-- 该广播需要继承 JPush 提供的 JPushMessageReceiver 类, 并如下新增一个 Intent-Filter -->
-    <receiver android:name="自定义 Receiver" android:enabled="true" android:exported="false">
+    <receiver android:name="EMOASApp.MessageReceiver" android:enabled="true" android:exported="false">
       <intent-filter>
         <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
         <category android:name="EMOASApp.EMOASApp" />
@@ -111,7 +121,7 @@
     </receiver>
     <!-- User defined. 用户自定义 Receiver 接收被拉起回调-->
     <!-- 自定义 Receiver 组件，继承cn.jpush.android.service.WakedResultReceiver类,复写onWake(int wakeType)或 onWake(Context context, int wakeType)方法以监听被拉起 -->
-    <receiver android:name="xx.xx.xx.MyWakedResultReceiver">
+    <receiver android:name="EMOASApp.Receiver_test">
       <intent-filter>
         <action android:name="cn.jpush.android.intent.WakedReceiver" />
         <category android:name="EMOASApp.EMOASApp" />
