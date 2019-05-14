@@ -53,13 +53,19 @@
     <Reference Include="JPush.Xamarin.Android.SDK">
       <HintPath>G:\尹晨旭的学习\JPush.Xamarin.Android.SDK\JPush.Xamarin.Android.SDK\bin\Debug\JPush.Xamarin.Android.SDK.dll</HintPath>
     </Reference>
+    <Reference Include="JPush.Xamarin.Android.SDK, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>bin\Debug\JPush.Xamarin.Android.SDK.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Provider\DataProvider.cs" />
+    <Compile Include="Provider\DownloadProvider.cs" />
     <Compile Include="Receivers\MyReceiver.cs" />
+    <Compile Include="Receivers\PushReceiver.cs" />
     <Compile Include="Services\CommonService.cs" />
     <Compile Include="Entity\Global.cs" />
     <Compile Include="Entity\User.cs" />
@@ -69,6 +75,8 @@
     <Compile Include="Receivers\Receiver_test.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DaemonService.cs" />
+    <Compile Include="Services\PushService.cs" />
     <Compile Include="Utils\EncryptionUtil.cs" />
     <Compile Include="Utils\HttpUtil.cs" />
   </ItemGroup>
