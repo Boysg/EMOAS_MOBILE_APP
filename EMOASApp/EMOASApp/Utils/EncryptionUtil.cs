@@ -21,6 +21,7 @@ namespace EMOASApp.Utils
         {
             try
             {
+                string test = DateTime.Now.ToString("MMddyyyyMMddyyyy");
                 byte[] Key = Encoding.UTF8.GetBytes(DateTime.Now.ToString("MMddyyyyMMddyyyy"));
                 byte[] IV = DESIv;
                 byte[] inputByteArray = Encoding.UTF8.GetBytes(src_str);

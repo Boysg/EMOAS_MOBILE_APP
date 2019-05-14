@@ -10,7 +10,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using CN.Jpush.Android.Service;
-namespace EMOASApp
+
+namespace EMOASApp.Service
 {
     class CommonService : JCommonService
     {

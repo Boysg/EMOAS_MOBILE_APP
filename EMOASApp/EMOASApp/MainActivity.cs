@@ -9,19 +9,24 @@ using Newtonsoft.Json;
 using System;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
-using CN.Jpush.Android.Api;
+using CN.Jpush.Android.Service;
 
 namespace EMOASApp
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
-        User user = new User();
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            //获取
+            User user_login = new User();
+            //获取Preferences，如果保存有用户名密码直接登录
             ISharedPreferences preferences_login = GetSharedPreferences("login_inf", 0);
-            //ToDo https://www.cnblogs.com/fly-allblue/p/3792232.html
+            user_login.BM = preferences_login.GetString("BM", string.Empty);
+            user_login.AppPwd = preferences_login.GetString("AppPwd", string.Empty);
+            if (user_login.BM.Length > 0 && user_login.AppPwd.Length > 0)
+            {
+                DoLogin(user_login);
+            }
             //
             base.OnCreate(savedInstanceState);
             // Set our view from the "main" layout resource
@@ -36,37 +41,40 @@ namespace EMOASApp
                 using (MD5 pwd_hash = MD5.Create())
                 {
                     //密码加密
+                    string bm_encrypted = EncryptionUtil.DesEncrypt(editText_user_name.Text);
                     string pwd_encrypted = EncryptionUtil.GetMd5Hash(pwd_hash, editText_password.Text);
-                    User user_login = new User
-                    {
-                        BM = editText_user_name.Text,
-                        AppPwd = editText_password.Text
-                    };
-                    //Preferences
+                    user_login.BM = bm_encrypted;
+                    user_login.AppPwd = pwd_encrypted;
+                    //存放Preferences
                     ISharedPreferencesEditor editor_login = preferences_login.Edit();
                     editor_login.PutString("BM", user_login.BM);
-                    editor_login.PutString("AppPwd", pwd_encrypted);
+                    editor_login.PutString("AppPwd", user_login.AppPwd);
                     editor_login.Commit();
-                    //发送至WebApi
-                    string json_login = JsonConvert.SerializeObject(user_login);
-                    string url = "http://192.168.1.117:5000/user/login/" + EncryptionUtil.DesEncrypt(json_login);
-                    Task<string> response = HttpUtil.GetAsync(url);
-                    if (response == null)
-                    {
-                        Toast.MakeText(this, "用户名或密码错误", ToastLength.Short).Show();
-                        return;
-                    }
-                    //user接收并保存至全局对象
-                    user = JsonConvert.DeserializeObject<User>(response.Result);
-                    Global global = Application as Global;
-                    global.User = user;
-                    //启用Jpush
-                    
-                    //跳转首页到Activity
-                    Intent intent_home = new Intent(this, typeof(HomeActivity));
-                    StartActivity(intent_home);
                 }
+                DoLogin(user_login);
             };
+        }
+
+        private bool DoLogin(User user)
+        {
+            //发送至WebApi
+            string url = "http://192.168.1.117:5000/user/login";
+            string response = HttpUtil.PostAsync(url, user).Result;
+            if (string.IsNullOrEmpty(response))
+            {
+                Toast.MakeText(this, "用户名或密码错误", ToastLength.Short).Show();
+                return false;
+            }
+            //user接收并保存至全局对象
+            Global global = Application as Global;
+            global.User = JsonConvert.DeserializeObject<User>(response);
+            //启用Jpush
+            //Todo 
+            //跳转首页到Activity
+            Intent intent_home = new Intent(this, typeof(HomeActivity));
+            StartActivity(intent_home);
+
+            return true;
         }
 
         protected override void OnPause()

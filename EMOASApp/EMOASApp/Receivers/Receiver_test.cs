@@ -1,7 +1,7 @@
 ﻿using Android.Content;
 using CN.Jpush.Android.Service;
 
-namespace EMOASApp
+namespace EMOASApp.Receivers
 {
     [BroadcastReceiver]
     public class Receiver_test : WakedResultReceiver
