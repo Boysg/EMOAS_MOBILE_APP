@@ -50,9 +50,6 @@
     <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="JPush.Xamarin.Android.SDK">
-      <HintPath>G:\尹晨旭的学习\JPush.Xamarin.Android.SDK\JPush.Xamarin.Android.SDK\bin\Debug\JPush.Xamarin.Android.SDK.dll</HintPath>
-    </Reference>
     <Reference Include="JPush.Xamarin.Android.SDK, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>bin\Debug\JPush.Xamarin.Android.SDK.dll</HintPath>
     </Reference>
@@ -62,8 +59,11 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PopWinActivity.cs" />
     <Compile Include="Provider\DataProvider.cs" />
     <Compile Include="Provider\DownloadProvider.cs" />
+    <Compile Include="PushActivity.cs" />
+    <Compile Include="Receivers\AlarmReceiver.cs" />
     <Compile Include="Receivers\MyReceiver.cs" />
     <Compile Include="Receivers\PushReceiver.cs" />
     <Compile Include="Services\CommonService.cs" />
@@ -72,10 +72,11 @@
     <Compile Include="HomeActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Receivers\MessageReceiver.cs" />
-    <Compile Include="Receivers\Receiver_test.cs" />
+    <Compile Include="Receivers\MyWakedResultReceiver.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\DaemonService.cs" />
+    <Compile Include="Services\DownloadService.cs" />
     <Compile Include="Services\PushService.cs" />
     <Compile Include="Utils\EncryptionUtil.cs" />
     <Compile Include="Utils\HttpUtil.cs" />

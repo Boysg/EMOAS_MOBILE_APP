@@ -1,4 +1,3 @@
-using System;
 using Android.App;
 
 namespace EMOASApp.Service

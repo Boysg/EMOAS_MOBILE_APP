@@ -1,6 +1,5 @@
 using Android.App;
 using Android.Content;
-using Android.Views.Animations;
 
 namespace EMOASApp.Receivers
 {
