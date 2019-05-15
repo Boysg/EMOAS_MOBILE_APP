@@ -50,7 +50,8 @@
     <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="JPush.Xamarin.Android.SDK">
+    <Reference Include="JPush.Xamarin.Android.SDK, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>G:\尹晨旭的学习\JPush.Xamarin.Android.SDK\JPush.Xamarin.Android.SDK\bin\Debug\JPush.Xamarin.Android.SDK.dll</HintPath>
     </Reference>
     <Reference Include="System" />

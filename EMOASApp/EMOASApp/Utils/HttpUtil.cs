@@ -52,14 +52,14 @@ namespace EMOASApp.Utils
                     //序列化
                     var args_json = JsonConvert.SerializeObject(args);
                     //配置httpContent
-                    HttpContent content = new StringContent(args_json);
-                    content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
+                    HttpContent content = new StringContent(args_json, Encoding.UTF8, "application/json");
                     //发送异步请求
-                    HttpResponseMessage response = await client.PostAsync(url, content);
+                    var response  = await client.PostAsync(url, content);
                     //如果不是成功状态码抛出异常
                     response.EnsureSuccessStatusCode();
                     //返回response
-                    return await response.Content.ReadAsStringAsync();
+                    string responseBody = await response.Content.ReadAsStringAsync();
+                    return responseBody;
                 }
                 catch (Exception e)
                 {

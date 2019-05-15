@@ -1,20 +1,32 @@
-﻿using System;
+﻿using Android.App;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 
 namespace EMOASApp.Entity
 {
-    class Global :Application
+    //[Application]
+    class Global : Application
     {
-        public User User { get; set; }
+        private static Dictionary<string, object> dictionary = new Dictionary<string, object>();
+
+        private static Global global;
+
+        public static Global GetGlobal()
+        {
+            return global;
+        }
+
+        public static Dictionary<string, object> GetDictionary()
+        {
+            return dictionary;
+        }
+
+        public override void OnCreate()
+        {
+            base.OnCreate();
+            global = this;
+        }
+
 
     }
 }
