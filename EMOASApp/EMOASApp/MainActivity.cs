@@ -1,15 +1,13 @@
 ﻿using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Support.V7.App;
 using Android.Widget;
 using EMOASApp.Entity;
 using EMOASApp.Utils;
-using Newtonsoft.Json;
 using System;
 using System.Security.Cryptography;
-using System.Threading.Tasks;
-using CN.Jpush.Android.Service;
+using Android.Support.V7.App;
+using Newtonsoft.Json;
 
 namespace EMOASApp
 {

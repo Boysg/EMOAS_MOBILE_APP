@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
+﻿using Android.App;
 using CN.Jpush.Android.Service;
 
 namespace EMOASApp.Service
 {
+    [Service(Name = "EMOASApp.Service.CommonService",
+        Process = ":pushcore")]
+    [IntentFilter(new string[]{"cn.jiguang.user.service.action"})]
     class CommonService : JCommonService
     {
     }

@@ -1,18 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
+﻿using Android.App;
 using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 
 namespace EMOASApp.Receivers
 {
-    [BroadcastReceiver]
+    [BroadcastReceiver(Name = "EMOASApp.Receivers.MyReceiver",
+        Enabled = true,
+        Exported = false)]
+    [IntentFilter(new string[]
+    {
+        "cn.jpush.android.intent.REGISTRATION",
+        "cn.jpush.android.intent.MESSAGE_RECEIVED",
+        "cn.jpush.android.intent.NOTIFICATION_RECEIVED",
+        "cn.jpush.android.intent.NOTIFICATION_OPENED",
+        "cn.jpush.android.intent.CONNECTION"
+    },
+        Categories = new string[]{"EMOASApp.EMOASApp"})]
     public class MyReceiver : BroadcastReceiver
     {
         public override void OnReceive(Context context, Intent intent)
